@@ -8,9 +8,11 @@ void setup() {
 void  loop() {
 if (digitalRead(Button)== HIGH) {
   digitalWrite(led_Pin, HIGH);
+  delay(1000);
+  digitalWrite(led_Pin, LOW);
+  delay(1000);
 }
 else {
   digitalWrite(led_Pin, LOW);
 }
 }
-
